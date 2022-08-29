@@ -6,6 +6,7 @@ int fact(int n){
      return n*fact(n-1);
 }
 int main(){
+    cout<<"The output is here: ";
     cout<<fact(8);
    return 0;
 }
