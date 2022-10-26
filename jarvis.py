@@ -79,8 +79,7 @@ if __name__ == '__main__':
         strTime = datetime.datetime.now().strftime("%H:%M:%S")
         speak(f"Sir,  the time is %s"  % strTime)
 
-    elif 'how are you' in query:
-        speak("Rom rom bro!")
+    
         
     
        
