@@ -1,0 +1,5 @@
+django
+psycopg-binary
+psycopg
+PyMySQL
+django-dotenv

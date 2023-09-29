@@ -1,0 +1,14 @@
+{% extends 'articles/base.html' %}
+
+
+{% block start %}
+<h1> Hello World! </h1>
+
+{% if object.id %}
+
+<h1> {{ object.title }} </h1>
+<h2> {{ object.content }} </h2>
+
+{%  endif %}
+
+{% endblock %}

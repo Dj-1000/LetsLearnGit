@@ -1,0 +1,22 @@
+{% extends 'articles/base.html' %}
+
+{% block start %}
+
+{% if not created %}
+    
+    <div style="margin-top: 40px;">
+    <form action = '.' method = 'POST'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create article</button>
+
+    </form>
+    </div>
+{% else %}
+
+<a href="/articles/search/{{ object.id }}"> Your object is created</a>
+
+{% endif %}
+
+{%endblock%}
+
